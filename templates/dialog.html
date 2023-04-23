@@ -1,0 +1,22 @@
+<!doctype html>
+<html xmlns="http://www.w3.org/1999/html" xmlns="http://www.w3.org/1999/html">
+  <head>
+    <title>TRPG COC Dialog</title>
+  </head>
+  <body>
+    <h1>TRPG COC Dialog</h1>
+    <div id="keeper-dialog">
+      <label for="keeper-response">Keeper:</label>
+      <p id="keeper-response"></p>
+       <p>{{ keeper_response|safe}}</p>
+    </div>
+
+    <form action = 'dialog' method="post">
+      <label for="user-input">Investigator:</label>
+      <input type="text" name="user-input"><br>
+      <button type="submit">Submit</button>
+    </form>
+
+
+  </body>
+</html>

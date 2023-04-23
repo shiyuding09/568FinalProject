@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Call of Cthulhu</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body>
+    <header>
+        <h1>Call of Cthulhu</h1>
+    </header>
+        <form action = 'generate_character' method="post">
+            <label for="name">Name:</label>
+            <input type="text" name="name" ><br>
+
+            <label for="age">Age:</label>
+            <input type="number" name="age" min="1" max="999" ><br>
+
+            <label for="gender">Gender:</label>
+            <select name="gender" >
+                <option value="male">Male</option>
+                <option value="female">Female</option>
+                <option value="other">Other</option>
+            </select><br>
+
+            <label for="occupation">Occupation:</label>
+            <input type="text" name="occupation" ><br>
+
+            <label for="nationality">Nationality:</label>
+            <input type="text" name="nationality" ><br>
+
+            <label for="strength">Strength:</label>
+            <input type="number" name="strength" min="1" max="99" ><br>
+
+            <label for="dexterity">Dexterity:</label>
+            <input type="number" name="dexterity" min="1" max="99" ><br>
+
+            <label for="constitution">Constitution:</label>
+            <input type="number" name="constitution" min="1" max="99" ><br>
+
+            <label for="intelligence">Intelligence:</label>
+            <input type="number" name="intelligence" min="1" max="99" ><br>
+
+            <label for="power">Power:</label>
+            <input type="number" name="power" min="1" max="99" ><br>
+
+            <label for="education">Education:</label>
+            <input type="number" name="education" min="1" max="99" ><br>
+
+            <label for="size">Size:</label>
+            <input type="number" name="size" min="1" max="99" ><br>
+
+            <label for="appearance">Appearance:</label>
+            <input type="number" name="appearance" min="1" max="99" ><br>
+
+            <label for="skills">Skills:</label>
+            <input type="text" name="skills" ><br>
+
+            <label for="equipment">Equipment:</label>
+            <input type="text" name="equipment" ><br>
+
+            <label for="sanity">Sanity:</label>
+            <input type="number" name="sanity" min="1" max="99" ><br>
+
+            <label for="magic">Magic:</label>
+            <input type="number" name="magic" min="1" max="99" ><br>
+
+            <button type="submit" name="submit-btn">Submit</button>
+            <button type="submit" name="generate-btn">Generate a character for me</button>
+        </form>
+
+    </body>
+</html>
+
