@@ -4,7 +4,7 @@ import openai
 app = Flask(__name__)
 
 # Set up OpenAI API key
-openai.api_key = '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'
+openai.api_key = 'Your_API_Key'
 # Set up the GPT engine
 engine = "gpt-3.5-turbo"
 rules = (f"You are the Keeper for Call of Cthulhu. You should follow the Keeper Rulebook of COC and make sure the user follows the rule of the investigator handbook"
